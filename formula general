@@ -1,0 +1,25 @@
+function setup() {
+	createCanvas(400, 400);
+}
+
+function draw() {
+	background(220);
+	var a = 10
+	var b = 12
+	var c = 15
+	var Formula = formulaGeneral(a,b,c);
+	var Formula1 = formulaGeneral1(a,b,c);
+	
+	console.log(Formula, Formula1);
+}
+
+function formulaGeneral(a,b,c) {
+	var Formula;
+	Formula = -b +(sqrt((b * b) + (4*(a * c))/2*a));
+	return Formula;
+}
+function formulaGeneral1(a,b,c) {
+	var Formula1;
+	Formula = -b -(sqrt((b * b) + (4*(a * c))/2*a));
+	return Formula;
+}
