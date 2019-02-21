@@ -1,0 +1,17 @@
+function setup() {
+	createCanvas(400, 400);
+}
+
+function draw() {
+	background(220);
+	var CO = 12
+	var CA = 12
+	HipoC = hipotenusa1(CO, CA);
+	console.log(HipoC);
+}
+
+function hipotenusa1(CO,CA) {
+	var HipoC;
+	HipoC = sqrt((CO * CO) + (CA * CA));
+	return HipoC;
+}
